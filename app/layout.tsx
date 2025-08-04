@@ -1,15 +1,83 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+import "./styles/main.scss";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Google font: Poppins
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+// Local font: Behind The Nineties
+const behindNineties = localFont({
+  variable: "--font-behind-nineties",
+  display: "swap",
+  src: [
+    {
+      path: "../fonts/behind-the-nineties/Behind The Nineties Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../fonts/behind-the-nineties/Behind The Nineties Italic.ttf",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "../fonts/behind-the-nineties/Behind The Nineties Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../fonts/behind-the-nineties/Behind The Nineties Medium Italic.ttf",
+      weight: "500",
+      style: "italic",
+    },
+    {
+      path: "../fonts/behind-the-nineties/Behind The Nineties Semi Bold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../fonts/behind-the-nineties/Behind The Nineties Semi Bold Italic.ttf",
+      weight: "600",
+      style: "italic",
+    },
+    {
+      path: "../fonts/behind-the-nineties/Behind The Nineties Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../fonts/behind-the-nineties/Behind The Nineties Bold Italic.ttf",
+      weight: "700",
+      style: "italic",
+    },
+    {
+      path: "../fonts/behind-the-nineties/Behind The Nineties Extra Bold.ttf",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "../fonts/behind-the-nineties/Behind The Nineties Extra Bold Italic.ttf",
+      weight: "800",
+      style: "italic",
+    },
+    {
+      path: "../fonts/behind-the-nineties/Behind The Nineties Black.ttf",
+      weight: "900",
+      style: "normal",
+    },
+    {
+      path: "../fonts/behind-the-nineties/Behind The Nineties Black Italic.ttf",
+      weight: "900",
+      style: "italic",
+    },
+  ],
 });
 
 export const metadata: Metadata = {
@@ -25,7 +93,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${poppins.variable} ${behindNineties.variable} antialiased`}
       >
         {children}
       </body>
