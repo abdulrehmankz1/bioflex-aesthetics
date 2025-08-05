@@ -1,12 +1,11 @@
 $primary: #911e3d;
 $secondary: #8a8a8a;
 $text-muted: rgba(31, 31, 31, 0.8);
-$dark: #3A3A3A;
-$white-light: #FFFFFF4D;
+$dark: #3a3a3a;
+$white-light: #ffffff4d;
 $white: #ffffff;
 
-@use 'sass:color';
-
+@use "sass:color";
 
 body {
   background-color: transparent;
@@ -72,9 +71,9 @@ h5 {
 .login_btn {
   background-color: $primary;
 
-&:hover {
-  background-color: color.darken($primary, 10%);
-}
+  &:hover {
+    background-color: color.adjust($primary, $lightness: -10%);
+  }
 }
 
 .btn-circle {
@@ -97,12 +96,15 @@ h5 {
     border-radius: 20px;
   }
 }
+
 .text_primary {
   color: $primary;
 }
+
 .text_muyted {
   color: $text-muted;
 }
+
 .text-dark {
   color: $dark;
 }
@@ -151,11 +153,13 @@ h5 {
   padding: 13px 15px;
   overflow: hidden;
 }
+
 input {
   &:focus {
     outline: none;
   }
 }
+
 .css-b62m3t-container {
   position: relative;
   box-sizing: border-box;
@@ -192,6 +196,7 @@ input {
   box-sizing: border-box;
   outline: 0px !important;
 }
+
 .dropdown-select__control {
   text-align: start;
   text-overflow: ellipsis;
@@ -217,6 +222,7 @@ input {
 .dropdown-select__value-container {
   padding-left: 0 !important;
 }
+
 .css-1jqq78o-placeholder {
   grid-area: 1 / 1 / 2 / 3;
   color: rgb(128, 128, 128);
@@ -224,6 +230,7 @@ input {
   margin-right: 2px;
   box-sizing: border-box;
 }
+
 .dropdown-select__placeholder {
   margin: 0 !important;
   white-space: nowrap;
@@ -239,6 +246,7 @@ input {
   flex-shrink: 0;
   box-sizing: border-box;
 }
+
 .css-1u9des2-indicatorSeparator {
   align-self: stretch;
   width: 1px;
@@ -259,9 +267,11 @@ input {
   padding: 8px;
   box-sizing: border-box;
 }
+
 .dropdown-select__indicator {
   padding: 0 !important;
 }
+
 .css-8mmkcg {
   display: inline-block;
   fill: currentcolor;
@@ -275,15 +285,18 @@ input {
   border-radius: 8px;
   padding: 4px 6px;
 }
+
 .dropdown-select__placeholder {
   color: #8a8a8a;
 }
+
 .btn_primary {
   background-color: $primary;
   color: $white;
   cursor: pointer;
   border-radius: 10px;
-&:hover {
-  background-color: color.darken($primary, 10%);
-}
+
+  &:hover {
+    background-color: color.adjust($primary, $lightness: -10%);
+  }
 }
