@@ -83,7 +83,7 @@ const HeroSection = () => {
       <div className="background-wrapper relative">
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row">
-            <div className="w-full lg:w-[60%] text-center lg:text-start">
+            <div className="w-full lg:w-[50%] text-center lg:text-start">
               <h1 className="font-nineties text_muyted">
                 Glow{" "}
                 <strong className="text_primary italic">
