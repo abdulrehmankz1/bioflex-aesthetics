@@ -4,15 +4,19 @@ $text-muted: rgba(31, 31, 31, 0.8);
 $dark: #3a3a3a;
 $white-light: #ffffff4d;
 $white: #ffffff;
+$background-color: #fffcf9;
+$overlay-color: rgba(31, 31, 31, 0.8);
 
 @use "sass:color";
 
 body {
-  background-color: transparent;
-  font-family: var(--font-poppins), sans-serif; // use CSS variable
+  font-family: var(--font-poppins), sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #8a8a8a;
+  background: url("../../public/assets/images/body-bg.png") no-repeat 50%,
+    $background-color;
+  background-size: cover;
 }
 
 h1 {
@@ -20,6 +24,12 @@ h1 {
   font-weight: 400;
   font-size: 100px;
   line-height: 100px;
+}
+h2 {
+  font-family: var(--font-behind-nineties), sans-serif;
+  font-size: 75px;
+  font-weight: 400;
+  line-height: 95%;
 }
 
 h5 {
@@ -33,6 +43,12 @@ h5 {
 
 .fs-16 {
   font-size: 16px;
+}
+.overlay_color {
+  color: $overlay-color;
+}
+.text_secondary {
+  color: $secondary;
 }
 
 .navbar-section {
@@ -298,5 +314,46 @@ input {
 
   &:hover {
     background-color: color.adjust($primary, $lightness: -10%);
+  }
+}
+.service-card__arrow-btn {
+  position: absolute;
+  top: 0.75rem; // same as top-3 in Tailwind
+  right: 0.75rem; // same as right-3 in Tailwind
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  transition: all 0.3s ease;
+
+  // Optional shadow for hover effect
+  &:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  svg {
+    color: #911e3d;
+  }
+}
+.service-card__tags {
+  position: absolute;
+  bottom: 0.75rem; // same as bottom-3
+  left: 0.75rem; // same as left-3
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem; // same as gap-2
+}
+
+.service-card__tag {
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 7px 18px;
+  color: white;
+  font-size: 16px;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.4);
   }
 }

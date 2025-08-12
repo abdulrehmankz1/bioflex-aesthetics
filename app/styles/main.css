@@ -1,9 +1,10 @@
 body {
-  background-color: transparent;
   font-family: var(--font-poppins), sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #8a8a8a;
+  background: url("../../public/assets/images/body-bg.png") no-repeat 50%, #fffcf9;
+  background-size: cover;
 }
 
 h1 {
@@ -11,6 +12,13 @@ h1 {
   font-weight: 400;
   font-size: 100px;
   line-height: 100px;
+}
+
+h2 {
+  font-family: var(--font-behind-nineties), sans-serif;
+  font-size: 75px;
+  font-weight: 400;
+  line-height: 95%;
 }
 
 h5 {
@@ -24,6 +32,14 @@ h5 {
 
 .fs-16 {
   font-size: 16px;
+}
+
+.overlay_color {
+  color: rgba(31, 31, 31, 0.8);
+}
+
+.text_secondary {
+  color: #8a8a8a;
 }
 
 .navbar-section {
@@ -91,7 +107,7 @@ h5 {
 }
 
 .text-dark {
-  color: "#3A3A3A";
+  color: #3a3a3a;
 }
 
 .book-appointment-container {
@@ -123,7 +139,7 @@ h5 {
 }
 
 .form-control {
-  color: "#3A3A3A";
+  color: #3a3a3a;
   background-color: #ffffff;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -270,4 +286,43 @@ input:focus {
 }
 .btn_primary:hover {
   background-color: rgb(102.7428571429, 21.2571428571, 43.2228571429);
+}
+
+.service-card__arrow-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+.service-card__arrow-btn:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.service-card__arrow-btn svg {
+  color: #911e3d;
+}
+
+.service-card__tags {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.service-card__tag {
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 7px 18px;
+  color: white;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+.service-card__tag:hover {
+  background: rgba(0, 0, 0, 0.4);
 }/*# sourceMappingURL=main.css.map */

@@ -86,9 +86,9 @@ const HeroSection = () => {
             <div className="w-full lg:w-[50%] text-center lg:text-start">
               <h1 className="font-nineties text_muyted">
                 Glow{" "}
-                <strong className="text_primary italic">
+                <span className="text_primary font-semibold italic">
                   Naturally, Shine
-                </strong>{" "}
+                </span>{" "}
                 Confidently
               </h1>
               <p className="fs-16 pt-6 text-center lg:text-justify font-light">
@@ -107,6 +107,7 @@ const HeroSection = () => {
                 alt="hero-section-image"
                 width={710}
                 height={720}
+                draggable="false"
               />
 
               <div
@@ -161,7 +162,7 @@ const HeroSection = () => {
                         options={timeSlotOptions}
                         placeholder="Select Time Slot"
                         value={selectedTime}
-                        onChange={(option) => setSelectedTime(option)} 
+                        onChange={(option) => setSelectedTime(option)}
                       />
 
                       {errors.time && (

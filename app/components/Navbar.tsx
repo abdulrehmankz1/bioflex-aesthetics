@@ -89,12 +89,7 @@ const Navbar = () => {
                 />
               </svg>
             </button>
-            <button
-              type="button"
-              className="text-white font-medium rounded-lg text-sm text-center login_btn px-7 py-2.5 cursor-pointer mr-0"
-            >
-              Login
-            </button>
+            <button className="btn_primary py-2.5 px-6">Login</button>
             <button
               data-collapse-toggle="navbar-cta"
               type="button"
