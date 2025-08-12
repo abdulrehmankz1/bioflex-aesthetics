@@ -6,6 +6,12 @@ $white-light: #ffffff4d;
 $white: #ffffff;
 $background-color: #fffcf9;
 $overlay-color: rgba(31, 31, 31, 0.8);
+$color-cream: #F4EDE4;
+$color-gold: #C38A3E;
+$color-white-smoke: #FBFBFB;
+$color-light-gray:  #EAEAEA;
+$color-dark: #1F1F1F;
+
 
 @use "sass:color";
 
@@ -40,15 +46,39 @@ h5 {
   font-weight: 500;
   line-height: 34px;
 }
-
+p{
+font-size: 16px;
+font-weight: 300;
+line-height: normal;
+letter-spacing: -0.8px;
+}
 .fs-16 {
   font-size: 16px;
+}
+
+.font_behind {
+    font-family: var(--font-behind-nineties), sans-serif;
 }
 .overlay_color {
   color: $overlay-color;
 }
 .text_secondary {
   color: $secondary;
+}
+.color_cream{
+  background-color: $color-cream;
+}
+.color_gold {
+  color: $color-gold;
+}
+.bg_color_light_gray {
+  background-color: $color-light-gray;
+}
+.color_white_smoke {
+  background-color: $color-white-smoke;
+}
+.text_dark {
+  color: $color-dark;
 }
 
 .navbar-section {

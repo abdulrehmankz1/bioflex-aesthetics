@@ -30,8 +30,19 @@ h5 {
   line-height: 34px;
 }
 
+p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.8px;
+}
+
 .fs-16 {
   font-size: 16px;
+}
+
+.font_behind {
+  font-family: var(--font-behind-nineties), sans-serif;
 }
 
 .overlay_color {
@@ -40,6 +51,26 @@ h5 {
 
 .text_secondary {
   color: #8a8a8a;
+}
+
+.color_cream {
+  background-color: #F4EDE4;
+}
+
+.color_gold {
+  color: #C38A3E;
+}
+
+.bg_color_light_gray {
+  background-color: #EAEAEA;
+}
+
+.color_white_smoke {
+  background-color: #FBFBFB;
+}
+
+.text_dark {
+  color: #1F1F1F;
 }
 
 .navbar-section {
