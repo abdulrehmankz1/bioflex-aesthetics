@@ -47,12 +47,6 @@ const Services = () => {
       <div className="container mx-auto py-20">
         <div className="grid grid-cols-1 gap-4 p-4 sm:grid-cols-2">
           <div>
-            <h2 className="overlay_color">
-              <span className="text_primary italic">Effective, </span>
-              Gentle, &
-              <br /> Science-Back
-              <span className="text_primary italic"> Skincare,</span>
-            </h2>
             <Image
               src="/assets/images/sparkle_line.png"
               alt="Sparkle Line"

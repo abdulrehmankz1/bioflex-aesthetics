@@ -1,5 +1,6 @@
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
+import OurBlog from "./components/OurBlog";
 import OurProducts from "./components/OurProducts";
 import Services from "./components/Services";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroSection />
       <Services />
       <OurProducts />
+      <OurBlog />
     </>
   );
 }

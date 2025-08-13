@@ -6,12 +6,11 @@ $white-light: #ffffff4d;
 $white: #ffffff;
 $background-color: #fffcf9;
 $overlay-color: rgba(31, 31, 31, 0.8);
-$color-cream: #F4EDE4;
-$color-gold: #C38A3E;
-$color-white-smoke: #FBFBFB;
-$color-light-gray:  #EAEAEA;
-$color-dark: #1F1F1F;
-
+$color-cream: #f4ede4;
+$color-gold: #c38a3e;
+$color-white-smoke: #fbfbfb;
+$color-light-gray: #eaeaea;
+$color-dark: #1f1f1f;
 
 @use "sass:color";
 
@@ -37,6 +36,13 @@ h2 {
   font-weight: 400;
   line-height: 95%;
 }
+h3 {
+  font-family: var(--font-behind-nineties), sans-serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 95%;
+}
 
 h5 {
   color: #3a3a3a;
@@ -46,18 +52,21 @@ h5 {
   font-weight: 500;
   line-height: 34px;
 }
-p{
-font-size: 16px;
-font-weight: 300;
-line-height: normal;
-letter-spacing: -0.8px;
+p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.8px;
 }
 .fs-16 {
   font-size: 16px;
 }
-
+.fs-35 {
+  font-size: 35px;
+  line-height: 95%;
+}
 .font_behind {
-    font-family: var(--font-behind-nineties), sans-serif;
+  font-family: var(--font-behind-nineties), sans-serif;
 }
 .overlay_color {
   color: $overlay-color;
@@ -65,7 +74,7 @@ letter-spacing: -0.8px;
 .text_secondary {
   color: $secondary;
 }
-.color_cream{
+.color_cream {
   background-color: $color-cream;
 }
 .color_gold {
@@ -386,4 +395,8 @@ input {
   &:hover {
     background: rgba(0, 0, 0, 0.4);
   }
+}
+.glass-box {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
 }
