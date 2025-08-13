@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import StatCard from "./StatCard";
 import BlogSlider from "./BlogSlider";
+import TreatmentsSlider from "./TreatmentsSlider";
 
 const OurBlog = () => {
   const slides = [
@@ -100,6 +101,10 @@ const OurBlog = () => {
           </div>
         </div>
         <BlogSlider slides={slides} />
+      </div>
+      <div className="my-20">
+        <TreatmentsSlider direction="right" speed={50} />
+        <TreatmentsSlider direction="left" speed={50} />
       </div>
     </section>
   );
