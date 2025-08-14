@@ -42,7 +42,7 @@ export default function ServicesCard({
 
       {/* Title and description */}
       <div className="mt-3.5">
-        <h5 className="text-lg font-semibold">{title}</h5>
+        <h5 className="text-lg font-semibold text-dark">{title}</h5>
         <p className="text-base font-light text_secondary">{description}</p>
       </div>
     </div>
