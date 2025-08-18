@@ -86,7 +86,7 @@ const HeroSection = () => {
             <div className="w-full lg:w-[50%] text-center lg:text-start">
               <h1 className="font-nineties text_muyted">
                 Glow{" "}
-                <span className="text_primary font-semibold italic">
+                <span className="text_primary font-medium italic">
                   Naturally, Shine
                 </span>{" "}
                 Confidently

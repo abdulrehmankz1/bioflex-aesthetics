@@ -38,7 +38,7 @@ export default function ProductCard({
       <div className="mt-1.5 p-5 bg-[#FBFBFB] border border-[#EAEAEA] shadow-xs rounded-2xl">
         <div className="flex justify-between items-center">
           <div className="flex flex-col">
-            <h5 className="text-lg font-semibold text-dark">{title}</h5>
+            <h5 className="text-lg font-medium text-dark">{title}</h5>
             <Link
               href={link}
               className="text-lg font-light text_secondary hover:underline flex items-center gap-2.5"
