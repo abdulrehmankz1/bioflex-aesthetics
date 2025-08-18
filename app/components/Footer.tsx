@@ -234,8 +234,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-between text-dark-gray">
-            <div className="mb-10">
+          <div className="flex items-center justify-between text-dark-gray mb-10">
+            <div>
               <Link href="#" className="hover:underline me-20">
                 Terms & Condition
               </Link>
@@ -244,8 +244,8 @@ const Footer = () => {
               </Link>
             </div>
             <div>
-              <Link href="#" className="hover:underline">
-                Terms & Condition
+              <Link href="#">
+               © 2025 Laluna. All Rights Reserved
               </Link>
             </div>
           </div>
