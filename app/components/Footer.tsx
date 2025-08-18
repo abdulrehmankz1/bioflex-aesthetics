@@ -15,24 +15,22 @@ const Footer = () => {
                 <h5 className="font-light text-[#8B8B8B !important]">
                   Call Center
                 </h5>
-                <div className="mt-3 text-xl text_primary">+123-456-7890,</div>
-                <div className="text-xl text_primary">+123-456-7890,</div>
+                <div className="mt-3 text-xl text_dark">+123-456-7890,</div>
+                <div className="text-xl text_dark">+123-456-7890</div>
               </div>
             </div>
             <div className="ps-14 border-r-2 border-[#DFDFDF] py-6">
               <div>
                 <h5 className="font-light text-[#8B8B8B]">E-mail Address</h5>
-                <div className="mt-3 text-xl text_primary">
-                  your_mail@mail.com
-                </div>
+                <div className="mt-3 text-xl text_dark">your_mail@mail.com</div>
               </div>
             </div>
             <div className="ps-14 border-r-2 border-[#DFDFDF] py-6">
               <div>
                 <h5 className="font-light text-[#8B8B8B]">Our locations</h5>
-                <div className="mt-3 text-xl text_primary">Karachi</div>
-                <div className="text-xl text_primary">Lahore</div>
-                <div className="text-xl text_primary">Islamabad</div>
+                <div className="mt-3 text-xl text_dark">Karachi</div>
+                <div className="text-xl text_dark">Lahore</div>
+                <div className="text-xl text_dark">Islamabad</div>
               </div>
             </div>
             <div className="ps-14 border-r-2 border-[#DFDFDF] py-6">
@@ -60,7 +58,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <footer className="">
+      <footer>
         {/* new container */}
         <div className="container mx-auto">
           <div className="flex flex-wrap gap-y-6 px-6 py-10 text-dark-gray">
@@ -244,9 +242,7 @@ const Footer = () => {
               </Link>
             </div>
             <div>
-              <Link href="#">
-               © 2025 Laluna. All Rights Reserved
-              </Link>
+              <Link href="#">© 2025 Laluna. All Rights Reserved</Link>
             </div>
           </div>
         </div>
