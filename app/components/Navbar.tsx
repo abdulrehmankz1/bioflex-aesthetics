@@ -23,71 +23,23 @@ const Navbar = () => {
               type="button"
               className="font-medium btn-circle text-sm cursor-pointer mr-2"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-              >
-                <path
-                  d="M6.25 6.39167V5.58333C6.25 3.70833 7.75833 1.86667 9.63333 1.69167C11.8667 1.475 13.75 3.23333 13.75 5.425V6.575"
-                  stroke="#CCB391"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M7.50034 18.3333H12.5003C15.8503 18.3333 16.4503 16.9917 16.6253 15.3583L17.2503 10.3583C17.4753 8.325 16.892 6.66666 13.3337 6.66666H6.66701C3.10868 6.66666 2.52534 8.325 2.75034 10.3583L3.37534 15.3583C3.55034 16.9917 4.15034 18.3333 7.50034 18.3333Z"
-                  stroke="#CCB391"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M12.9131 9.99999H12.9206"
-                  stroke="#CCB391"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M7.07908 9.99999H7.08657"
-                  stroke="#CCB391"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+              <Image
+                src="/assets/images/bag.svg"
+                width={25}
+                height={25}
+                alt="Search"
+              />
             </button>
             <button
               type="button"
               className="font-medium btn-circle text-sm cursor-pointer mr-2"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-              >
-                <path
-                  d="M10.1331 9.05833C10.0498 9.05 9.94981 9.05 9.85814 9.05833C7.8748 8.99166 6.2998 7.36666 6.2998 5.36666C6.2998 3.325 7.9498 1.66666 9.99981 1.66666C12.0415 1.66666 13.6998 3.325 13.6998 5.36666C13.6915 7.36666 12.1165 8.99166 10.1331 9.05833Z"
-                  stroke="#CCB391"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M5.9666 12.1333C3.94993 13.4833 3.94993 15.6833 5.9666 17.025C8.25827 18.5583 12.0166 18.5583 14.3083 17.025C16.3249 15.675 16.3249 13.475 14.3083 12.1333C12.0249 10.6083 8.2666 10.6083 5.9666 12.1333Z"
-                  stroke="#CCB391"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+              <Image
+                src="/assets/images/profile.svg"
+                width={25}
+                height={25}
+                alt="Search"
+              />
             </button>
             <button className="btn_primary py-2.5 px-6">Login</button>
             <button
