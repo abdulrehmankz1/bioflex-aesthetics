@@ -11,6 +11,7 @@ $color-gold: #c38a3e;
 $color-white-smoke: #fbfbfb;
 $color-light-gray: #eaeaea;
 $color-dark: #1f1f1f;
+$dark-gray: #3d3d3d;
 
 @use "sass:color";
 
@@ -91,6 +92,10 @@ p {
 
 .color_gold {
   color: $color-gold;
+}
+
+.text-dark-gray {
+  color: $dark-gray;
 }
 
 .bg_color_light_gray {

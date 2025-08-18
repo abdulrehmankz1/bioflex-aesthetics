@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronRight } from "lucide-react";
 import React from "react";
 import { Facebook, Twitter, Linkedin, Mail } from "lucide-react";
 import Image from "next/image";
@@ -60,114 +60,194 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <footer className="border-t border-gray-300 bg-white text-gray-800">
-        <div className="container mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Logo & Description */}
-          <div className="flex flex-col justify-between">
-            <div>
-              <h2 className="text-xl font-bold mb-4">Logo</h2>
-              <p className="text-sm leading-relaxed text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                penatibus et magnis dis parturient montes.
-              </p>
-            </div>
-            <div className="flex gap-6 mt-6 text-sm text-gray-500">
-              <a href="#">Terms & Condition</a>
-              <a href="#">Privacy & Policy</a>
-            </div>
-          </div>
-
-          {/* Information */}
-          <div>
-            <h5 className="mb-4 font_poppins">Information</h5>
-            <ul className="space-y-2 text-sm text-gray-600">
-              <li>
-                <a href="#">About Store</a>
-              </li>
-              <li>
-                <a href="#">Product & Provide</a>
-              </li>
-              <li>
-                <a href="#">Pricing List</a>
-              </li>
-              <li>
-                <a href="#">Gallery</a>
-              </li>
-              <li>
-                <a href="#">Reviews</a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Useful Links */}
-          <div>
-            <h5 className="mb-4 font_poppins">Useful Links</h5>
-            <ul className="space-y-2 text-sm text-gray-600">
-              <li>
-                <a href="#">Contact</a>
-              </li>
-              <li>
-                <a href="#">Community</a>
-              </li>
-              <li>
-                <a href="#">FAQ</a>
-              </li>
-              <li>
-                <a href="#">Forum</a>
-              </li>
-              <li>
-                <a href="#">Help Center</a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Contact Us */}
-          <div className="flex flex-col justify-between">
-            <div>
-              <h5 className="mb-4 font_poppins">Contact Us</h5>
-              <div className="flex items-center gap-3 mt-5">
+      <footer className="">
+        {/* new container */}
+        <div className="container mx-auto">
+          <div className="flex flex-wrap gap-y-6 px-6 py-10 text-dark-gray">
+            {/* Logo & Description */}
+            <div className="w-full lg:w-[30%] me-auto order-first">
+              <div>
                 <Link href="#">
                   <Image
-                    src="/assets/images/google-icon.png"
+                    src="/assets/images/logo.svg"
                     alt="Description of image"
                     draggable="false"
-                    width={35}
-                    height={35}
+                    width={150}
+                    height={50}
+                    className="mb-2"
                   />
                 </Link>
-                <Link href="#">
-                  <Image
-                    src="/assets/images/facebook-icon.png"
-                    alt="Description of image"
-                    draggable="false"
-                    width={35}
-                    height={35}
-                  />
-                </Link>
-                <Link href="#">
-                  <Image
-                    src="/assets/images/twitter-icon.png"
-                    alt="Description of image"
-                    draggable="false"
-                    width={35}
-                    height={35}
-                  />
-                </Link>
-                <Link href="#">
-                  <Image
-                    src="/assets/images/linkedin-icon.png"
-                    alt="Description of image"
-                    draggable="false"
-                    width={34}
-                    height={34}
-                  />
-                </Link>
+                <p className="leading-relaxed text-dark-gray font-light">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                  natoque penatibus et magnis dis parturient montes.
+                </p>
               </div>
             </div>
-            <p className="text-xs text-gray-500 mt-6">
-              © 2025 Lalu. All Rights Reserved
-            </p>
+
+            {/* Information */}
+            <div className="w-[50%] lg:w-[20%] pe-8">
+              <h5 className="mb-5 font_poppins">Information</h5>
+              <ul className="space-y-2 text-dark-gray font-light list-none">
+                <li>
+                  <Link
+                    href="#"
+                    className="flex items-center gap-2 hover:underline"
+                  >
+                    <ChevronRight size={16} />
+                    About Store
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="flex items-center gap-2 hover:underline"
+                  >
+                    <ChevronRight size={16} />
+                    Product & Provide
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="flex items-center gap-2 hover:underline"
+                  >
+                    <ChevronRight size={16} />
+                    Pricing List
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="flex items-center gap-2 hover:underline"
+                  >
+                    <ChevronRight size={16} />
+                    Gallery
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="flex items-center gap-2 hover:underline"
+                  >
+                    <ChevronRight size={16} />
+                    Reviews
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Useful Links */}
+            <div className="w-[50%] lg:w-[20%]">
+              <h5 className="mb-5 font_poppins">Useful Links</h5>
+              <ul className="space-y-2 text-dark-gray font-light list-none">
+                <li>
+                  <Link
+                    href="#"
+                    className="flex items-center gap-2 hover:underline"
+                  >
+                    <ChevronRight size={16} />
+                    Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="flex items-center gap-2 hover:underline"
+                  >
+                    <ChevronRight size={16} />
+                    Community
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="flex items-center gap-2 hover:underline"
+                  >
+                    <ChevronRight size={16} />
+                    FAQ
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="flex items-center gap-2 hover:underline"
+                  >
+                    <ChevronRight size={16} />
+                    Forum
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#"
+                    className="flex items-center gap-2 hover:underline"
+                  >
+                    <ChevronRight size={16} />
+                    Help Center
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Contact Us */}
+            <div className="hidden lg:block w-full lg:w-[18%]">
+              <div className="flex flex-col justify-between">
+                <h5 className="mb-5 font_poppins">Contact Us</h5>
+                <div className="flex items-center gap-3">
+                  <Link href="#">
+                    <Image
+                      src="/assets/images/google-icon.png"
+                      alt="Description of image"
+                      draggable="false"
+                      width={35}
+                      height={35}
+                    />
+                  </Link>
+                  <Link href="#">
+                    <Image
+                      src="/assets/images/facebook-icon.png"
+                      alt="Description of image"
+                      draggable="false"
+                      width={35}
+                      height={35}
+                    />
+                  </Link>
+                  <Link href="#">
+                    <Image
+                      src="/assets/images/twitter-icon.png"
+                      alt="Description of image"
+                      draggable="false"
+                      width={35}
+                      height={35}
+                    />
+                  </Link>
+                  <Link href="#">
+                    <Image
+                      src="/assets/images/linkedin-icon.png"
+                      alt="Description of image"
+                      draggable="false"
+                      width={34}
+                      height={34}
+                    />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex items-center justify-between text-dark-gray">
+            <div className="mb-10">
+              <Link href="#" className="hover:underline me-20">
+                Terms & Condition
+              </Link>
+              <Link href="#" className="hover:underline">
+                Privacy & Policy
+              </Link>
+            </div>
+            <div>
+              <Link href="#" className="hover:underline">
+                Terms & Condition
+              </Link>
+            </div>
           </div>
         </div>
       </footer>
